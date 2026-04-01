@@ -436,20 +436,89 @@ export default function App() {
               <p className="text-slate-600 text-lg">
                 Qualität, die überzeugt. Hier siehst du einen Auszug meiner aktuellen Projekte.
               </p>
+              <p className="text-slate-500 text-sm mt-4 italic">
+                Hinweis: Die folgenden Projekte sind Vorzeigeprojekte zur Veranschaulichung meiner Arbeit und keine echten Kundenprojekte.
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 group">
-                <div className="aspect-video bg-slate-200 relative overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center text-slate-400 font-medium italic">
-                    Projekt im Aufbau...
+              {/* Project 1: Vogue Hair Studio */}
+              <a 
+                href="https://vogue-hair-studio.netlify.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 group hover:shadow-xl transition-all duration-300"
+              >
+                <div className="aspect-[3/2] relative overflow-hidden">
+                  <img 
+                    src="/hero vogue studio.png" 
+                    alt="Vogue Hair Studio Hero" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <span className="text-white font-medium flex items-center gap-2">Website besuchen <ArrowRight size={16} /></span>
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-slate-900 mb-2">Erste Projekte aktuell im Aufbau</h3>
-                  <p className="text-sm text-slate-500">Sei einer der Ersten und profitiere von exklusiven Einführungspreisen.</p>
+                <div className="p-6 h-full">
+                  <h3 className="font-bold text-slate-900 text-xl mb-2">Vogue Hair Studio</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    Ein eleganter Friseursalon, der modernen Lifestyle mit erstklassigem Handwerk verbindet. Die Webseite präsentiert das Team und die Services.
+                  </p>
                 </div>
-              </div>
+              </a>
+
+              {/* Project 2: Auto Tech Werkstatt */}
+              <a 
+                href="https://auto-tech-werkstatt.netlify.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 group hover:shadow-xl transition-all duration-300"
+              >
+                <div className="aspect-[3/2] relative overflow-hidden">
+                  <img 
+                    src="/hero autotech.png" 
+                    alt="Auto Tech Werkstatt Hero" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <span className="text-white font-medium flex items-center gap-2">Website besuchen <ArrowRight size={16} /></span>
+                  </div>
+                </div>
+                <div className="p-6 h-full">
+                  <h3 className="font-bold text-slate-900 text-xl mb-2">Auto Tech Werkstatt</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    Die digitale Visitenkarte einer modernen Kfz-Meisterwerkstatt. Hier finden Kunden alle Informationen zu Reparaturen und Inspektionen.
+                  </p>
+                </div>
+              </a>
+
+              {/* Project 3: Neon Void */}
+              <a 
+                href="https://neon-void3.netlify.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 group hover:shadow-xl transition-all duration-300"
+              >
+                <div className="aspect-[3/2] relative overflow-hidden">
+                  <img 
+                    src="/hero neon void.png" 
+                    alt="Neon Void Hero" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <span className="text-white font-medium flex items-center gap-2">Website besuchen <ArrowRight size={16} /></span>
+                  </div>
+                </div>
+                <div className="p-6 h-full">
+                  <h3 className="font-bold text-slate-900 text-xl mb-2">Neon Void</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    Ein futuristisches Web-Erlebnis mit Fokus auf modernes Design. Die Seite besticht durch ihre neonfarbene Ästhetik und interaktive Elemente.
+                  </p>
+                </div>
+              </a>
             </div>
 
             <div className="mt-16 bg-white p-10 rounded-3xl border border-slate-100 shadow-sm text-center">
